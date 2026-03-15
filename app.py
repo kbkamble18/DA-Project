@@ -3,7 +3,8 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df = pd.read_csv("data/OLA_Rides.csv")
+file_path = os.path.join("data", "ola_rides.csv")
+df = pd.read_csv(file_path)
 
 st.title("OLA Ride Insights Dashboard")
 
